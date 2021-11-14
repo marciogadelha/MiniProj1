@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', 'Roboto', sans-serif;
+}
+
+
+html, body{
+	height: 100%;
+	color: lightgrey;
+	background: black;
+}
+
+#app {
+	height: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 10px;
+	font-weight: bolder;
+	font-size: larger;
+	height: 15%;
+}
+
+.main_section {
+	display: flex;
+	height: 70%;
+}
+
+.main {
+	display: flex;
+	width: 100%;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: cornflowerblue;
+	width: 25%;
+	height: 100%;
+}
+
+.ul_menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+}
+
+.profile_img {
+	margin-top: 10%;
+	border-radius: 50%;
+	width: 40%;
+	border: 5px solid floralwhite;
+}
+
+.item_menu {
+	list-style: none;
+}
+
+.item_menu_link {
+	font-size: larger;
+	font-weight: bolder;
+	text-decoration: none;
+	color: floralwhite;
+}
+
+.content {
+	color: darkslategray;
+	background-color: floralwhite;
+	width: 75%;
+	text-align: justify;
+	padding: 5%;
+}
+
+h2 {
+	margin-bottom: 3%;
+}
+
+footer {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: smaller;
+}
+
+.img_footer {
+	margin: 1%;
+	width: 6%;
+}

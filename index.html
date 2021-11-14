@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Márcio Gadelha's CV</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Márcio Gadelha" />
+    <meta name="description" content="Márcio Gadelha's Curriculum Vitae" />
+    <meta name='viewport' content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>{{ title }}</h1>
+        </header>
+        <section class="main_section">
+            <div class="main">
+                <div class="menu">
+                    <img class="profile_img" v-bind:src="profile_img" alt="">
+                    <ul class="ul_menu">
+                        <li class="item_menu" v-for='(item, index) in menu'>
+                            <a class="item_menu_link" v-on:click="item_title=item; item_description=description[index]" href="#" onClick="return false;">
+                                {{ item }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2>{{ item_title }}</h2>
+                    <p>{{ item_description }}</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a v-for='(item, index) in footer' v-bind:href="footer_links[index]" target="_blank">
+                <img class="img_footer" v-bind:src="footer_images[index]" v-bind:alt="footer[index]" />
+            </a>
+            <p>
+                Todos os direitos reservados.
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
